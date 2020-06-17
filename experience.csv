@@ -1,6 +1,6 @@
-﻿job_title;company;descrip;start_time;finish_time
-Researcher Assitant;Centro de Estudios Públicos;"Research topics: Health economics, public health, health insurance.
-";2016;2018
-Researcher;Instituto Libertad y Desarrollo;"Research topics: Unemployment, productivity, economic growth and international markets.
-";2018;2019
-Researcher;Gobierno de Chile;Economic and statistical advisor of the Minister of Social Development and Family;2020;presente
+job_title,company,descrip,start_time,finish_time
+Researcher Assitant,Centro de Estudios Públicos,"Research topics: Health economics, public health, health insurance.
+",2016,2018
+Researcher,Instituto Libertad y Desarrollo,"Research topics: Unemployment, productivity, economic growth and international markets.
+",2018,2019
+Researcher,Gobierno de Chile,Economic and statistical advisor of the Minister of Social Development and Family,2020,presente
