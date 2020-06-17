@@ -113,6 +113,25 @@
                 </div>
             </section>
             <hr class="m-0" />
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
+
+            <script>
+            Papa.parse("https://raw.githubusercontent.com/profesorfaco/dno037-2020/gh-pages/clase-14/examen.csv", {
+                download: true,
+                complete: function (results) {
+                    console.log(results.data);
+
+                    var estudiante = results.data;
+
+                    for (let i = 1; i < estudiante.length - 1; i++) {
+                        $("#articulos").append(
+                            
+                        );
+                    }
+                },
+            });
+        </script>
             <!-- Skills-->
             <!--
             <section class="resume-section" id="skills">
