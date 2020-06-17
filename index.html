@@ -26,7 +26,7 @@
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Research Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Work Experience</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#work-experience">Work Experience</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Publications</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Resume</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Others</a></li>
@@ -71,67 +71,30 @@
             </section>
             <hr class="m-0" />
             <!-- Education-->
-            <section class="resume-section" id="education">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Work Experience</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Advisor</h3>
-                            <div class="subheading mb-3">Ministry of Social Development and Family - Gobierno de Chile</div>
-                            <p>
-                                <ul><li>Economic and statistical advisor of the Minister of Social Development and Family.</li>
-                                <li>Data analysis, policy evaluation and design for the Ministry’s agenda.</li></ul>
 
-                            </p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2020 - present</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Advisor</h3>
-                            <div class="subheading mb-3">Subsecretary of Social Evaluation - Gobierno de Chile</div>
-                            <p>
-                                <ul><li>Economic and statistical advisor of the Social Evaluation Subsecretary (Ministry of Social Developmentand Family).</li>
-                                <li>Projects management for two divisions: Public-Private Cooperation, in which we worked on socialresponsability for businesses contracts, and Social Observatory, in which we worked on the 2020 SocialCharacterization Survey (CASEN) and Subjective Well-being indicators.</li></ul>
-
-                            </p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2019 - 2020</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Advisor</h3>
-                            <div class="subheading mb-3">Inmigration Department - Gobierno de Chile</div>
-                            <p>
-                                <ul><li>Economic Policy advisor of the National Head of the Inmigration Department (Ministry of Interior).</li>
-                                <li>Statistical reports and relationships with international organisations (OECD and IMF).</li></ul>
-
-                            </p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2019</span></div>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
+        <section class="resume-section-v2" id="work-experience">
+        <h2 class="mb-5">Work Experience</h2>        
             <script>
-            Papa.parse("https://raw.githubusercontent.com/profesorfaco/dno037-2020/gh-pages/clase-14/examen.csv", {
+            Papa.parse("https://raw.githubusercontent.com/matihagene/clase-15/gh-pages/experience.csv", {
                 download: true,
                 complete: function (results) {
                     console.log(results.data);
 
-                    var estudiante = results.data;
+                    var experience = results.data;
 
-                    for (let i = 1; i < estudiante.length - 1; i++) {
-                        $("#articulos").append(
-                            
+                    for (let i = 1; i < experience.length - 1; i++) {
+                        $("#work-experience").append(
+
+                                    '<div class="d-flex flex-column flex-md-row justify-content-between mb-5"><div class="flex-grow-1"><h3 class="mb-0">'+experience[i][0]+'</h3><div class="subheading mb-3">'+experience[i][1]+'</div><p><ul>'+experience[i][2]+'</ul></p></div><div class="flex-shrink-0"><span class="text-primary">'+ experience[i][3] + ' - ' + experience[i][4] +'</span></div></div>' 
                         );
                     }
+
                 },
             });
         </script>
+        </section>
+        <hr class="m-0" />  
             <!-- Skills-->
             <!--
             <section class="resume-section" id="skills">

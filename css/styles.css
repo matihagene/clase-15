@@ -10124,6 +10124,21 @@ section.resume-section .resume-section-content {
   width: 100%;
 }
 
+section.resume-section-content-v2 {
+  width: 100%;
+  display: flex !important;
+}
+
+section.resume-section-v2 {
+  display: block;
+  align-items: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  max-width: 75rem;
+}
+
 @media (min-width: 768px) {
   section.resume-section {
     min-height: 100vh;
