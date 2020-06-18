@@ -85,7 +85,7 @@
 
                     var experience = results.data;
 
-                    for (let i = 1; i < experience.length - 1; i++) {
+                    for (let i = 1; i < experience.length; i++) {
                         $("#work-experience").append(
 
                                     '<div class="d-flex flex-column flex-md-row justify-content-between mb-5"><div class="flex-grow-1"><h3 class="mb-0">'+experience[i][0]+'</h3><div class="subheading mb-3">'+experience[i][1]+'</div><p><ul>'+experience[i][2]+'</ul></p></div><div class="flex-shrink-0"><span class="text-primary">'+ experience[i][3] + ' - ' + experience[i][4] +'</span></div></div>' 
