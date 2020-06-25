@@ -5882,7 +5882,7 @@ a.close.disabled {
 }
 
 .bg-dark {
-  background-color: #bf0404;
+  background-color: #3a3a3a;
   color: #ffffff;
   padding: 5px 10px;
   border-radius: 2px;
@@ -5896,6 +5896,7 @@ a.bg-dark:hover, a.bg-dark:focus,
 button.bg-dark:hover,
 button.bg-dark:focus {
   color: #ffffff;
+  background-color: #bf0404;
 }
 
 .bg-white {
