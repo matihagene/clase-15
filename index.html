@@ -20,7 +20,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top"
-                ><span class="d-block d-lg-none"><img class="img-icon rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="" /> Stefano Bruzzo</span><span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="" /></span></a
+                ><span class="d-block d-lg-none"><img class="img-icon rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="Stefano Bruzzo Profile Photo" /> Stefano Bruzzo</span><span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="Stefano Bruzzo Profile Photo" /></span></a
             ><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
@@ -39,9 +39,9 @@
                 <div class="resume-section-content">
                     <h1 class="mb-0">Stefano Bruzzo G.</h1>
                     <div class="subheading mb-5">B.A. in Economics · <a target="_blank" href="mailto:sbruzzo@fen.uchile.cl">sbruzzo@fen.uchile.cl</a></div>
-                    <p class="lead mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur molestie enim et orci porta, non tincidunt lacus sagittis. Mauris non lobortis turpis. Donec venenatis quam sem. <span class="highlight">Mauris elementum neque non lacus placerat sodales.</span> Sed lacus leo, lobortis vitae convallis in, vestibulum volutpat nisi. Donec facilisis risus ac nulla rutrum convallis.</p>
+                    <p class="lead mb-5">Economist of the Universidad de Chile. <span class="highlight">Interested in research about: income inequality, poverty and sustainable social development.</span> Mauris elementum neque non lacus placerat sodales. Sed lacus leo, lobortis vitae convallis in, vestibulum volutpat nisi. Donec facilisis risus ac nulla rutrum convallis.</p>
                     <div class="social-icons">
-                        <a class="social-icon" target="_blank" href="https://www.linkedin.com/in/stefano-bruzzo-gallardo"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" title="Stefano's Linkedin" target="_blank" href="https://www.linkedin.com/in/stefano-bruzzo-gallardo"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </section>
@@ -52,7 +52,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
         <section class="resume-section-v2" id="research-experience">
         <h2 class="mb-5">Research Experience</h2>        
-            <script>
+        <script>
             Papa.parse("https://raw.githubusercontent.com/matihagene/clase-15/gh-pages/research.csv", {
                 download: true,
                 complete: function (results) {
@@ -78,7 +78,7 @@
 
         <section class="resume-section-v2" id="work-experience">
         <h2 class="mb-5">Work Experience</h2>        
-            <script>
+        <script>
             Papa.parse("https://raw.githubusercontent.com/matihagene/clase-15/gh-pages/experience.csv", {
                 download: true,
                 complete: function (results) {
@@ -103,7 +103,7 @@
 
         <section class="resume-section-v2" id="publications">
         <h2 class="mb-5">Publications</h2>        
-            <script>
+        <script>
             Papa.parse("https://raw.githubusercontent.com/matihagene/clase-15/gh-pages/publications.csv", {
                 download: true,
                 complete: function (results) {
@@ -122,7 +122,32 @@
             });
         </script>
         </section>
-        <hr class="m-0" /> 
+        <hr class="m-0" />
+
+        <!-- Pagination -->
+
+        <section class="resume-section-v2" id="pagination">
+        <h2 class="mb-5">Pagination</h2>        
+        <script>
+            Papa.parse("https://raw.githubusercontent.com/matihagene/clase-15/gh-pages/pagination.csv", {
+                download: true,
+                complete: function (results) {
+                    console.log(results.data);
+
+                    var pagination = results.data;
+
+                    for (let i = 1; i < pagination.length; i++) {
+                        $("#pagination").append(
+
+                                    '<div class="d-flex flex-column flex-md-row justify-content-between mb-5"><div class="flex-grow-1"><h3 class="mb-0">'+pagination[i][0]+'</h3><div class="subheading-publications mb-4">'+pagination[i][1]+', '+pagination[i][3]+'</div></div><div class="flex-shrink-0"><a class="bg-dark" target="_blank" href="'+pagination[i][4]+'">View Article <i class="fas fa-chevron-right"></i></a></div></div>' 
+                        );
+                    }
+
+                },
+            });
+        </script>
+        </section>
+        <hr class="m-0" />          
 
         <!-- Resume-->
 
@@ -131,7 +156,7 @@
                     <h1 class="mb-resume">Resume</h1>
                     <div class="subheading mb-5">Download the Full Resume / CV in PDF
                     	<div class="general-icons">
-                        <a class="general-icon" target="_blank" href="https://uchile.academia.edu/StefanoBruzzo/CurriculumVitae"><i class="fas fa-file-alt"></i></a>
+                        <a class="general-icon" title="Download Resume" target="_blank" href="https://uchile.academia.edu/StefanoBruzzo/CurriculumVitae"><i class="fas fa-file-alt"></i></a>
                     	</div>
                     </div>
                 </div>
