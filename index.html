@@ -18,7 +18,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top"
-                ><span class="d-block d-lg-none">Stefano Bruzzo G.</span><span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="" /></span></a
+                ><span class="d-block d-lg-none"><img class="img-icon rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="" /> Stefano Bruzzo</span><span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="" /></span></a
             ><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
@@ -26,8 +26,7 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#research-experience">Research Experience</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#work-experience">Work Experience</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#publications">Publications</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Resume</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Others</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#resume">Resume</a></li>
                 </ul>
             </div>
         </nav>
@@ -113,7 +112,7 @@
                     for (let i = 1; i < publications.length; i++) {
                         $("#publications").append(
 
-                                    '<div class="d-flex flex-column flex-md-row justify-content-between mb-5"><div class="flex-grow-1"><h3 class="mb-0">'+publications[i][0]+'</h3><div class="subheading-publications mb-4">'+publications[i][1]+', '+publications[i][3]+'</div></div><div class="flex-shrink-0"><a class="bg-dark" target="_blank" href="'+publications[i][4]+'">View Article</a></div></div>' 
+                                    '<div class="d-flex flex-column flex-md-row justify-content-between mb-5"><div class="flex-grow-1"><h3 class="mb-0">'+publications[i][0]+'</h3><div class="subheading-publications mb-4">'+publications[i][1]+', '+publications[i][3]+'</div></div><div class="flex-shrink-0"><a class="bg-dark" target="_blank" href="'+publications[i][4]+'">View Article <i class="fas fa-chevron-right"></i></a></div></div>' 
                         );
                     }
 
@@ -121,7 +120,21 @@
             });
         </script>
         </section>
-        <hr class="m-0" />          
+        <hr class="m-0" /> 
+
+        <!-- Resume-->
+
+            <section class="resume-section-v3" id="resume">
+                <div class="resume-section-content-v3">
+                    <h1 class="mb-resume">Resume</h1>
+                    <div class="subheading mb-5">Download the Full Resume / CV in PDF
+                    	<div class="general-icons">
+                        <a class="general-icon" target="_blank" href="https://uchile.academia.edu/StefanoBruzzo/CurriculumVitae"><i class="fas fa-file-download"></i></a>
+                    	</div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />         
         
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

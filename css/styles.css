@@ -5888,6 +5888,10 @@ a.close.disabled {
   border-radius: 2px;
 }
 
+.bg-primary{
+  background-color: #e9e8e8;
+}
+
 a.bg-dark:hover, a.bg-dark:focus,
 button.bg-dark:hover,
 button.bg-dark:focus {
@@ -6018,6 +6022,8 @@ button.bg-dark:focus {
 
 .d-block {
   display: block !important;
+  color: #3a3a3a;
+  font-weight: 200;
 }
 
 .d-table {
@@ -6114,6 +6120,12 @@ button.bg-dark:focus {
     display: inline-flex !important;
   }
 }
+
+.img-icon{
+    max-width: 3rem;
+    height: auto;
+  }
+
 @media (min-width: 992px) {
   .d-lg-none {
     display: none !important;
@@ -7206,6 +7218,10 @@ button.bg-dark:focus {
 
 .mb-0,
 .my-0 {
+  margin-bottom: 0 !important;
+}
+
+.mb-resume {
   margin-bottom: 0 !important;
 }
 
@@ -9764,6 +9780,7 @@ p.lead {
     max-width: 10rem;
     max-height: 10rem;
   }
+
   #sideNav .navbar-collapse {
     display: flex;
     align-items: flex-start;
@@ -9801,6 +9818,26 @@ p.lead {
   background-color: #bf0404;
 }
 
+.general-icons .general-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  width: 3rem;
+  background-color: #495057;
+  color: #fff;
+  border-radius: 100%;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  margin-right: 1.2rem;
+}
+.general-icons .general-icon:last-child {
+  margin-right: 0;
+}
+.general-icons .general-icon:hover {
+  background-color: #bf0404;
+}
+
 .dev-icons {
   font-size: 3rem;
 }
@@ -9831,6 +9868,20 @@ section.resume-section-v2 {
   padding-top: 5rem;
   padding-bottom: 5rem;
   max-width: 75rem;
+}
+
+section.resume-section-v3 {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  max-width: 75rem;
+  text-align: center;
+}
+section.resume-section-v3 .resume-section-content-v3 {
+  width: 100%;
 }
 
 @media (min-width: 768px) {
