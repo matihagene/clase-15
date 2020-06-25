@@ -36,7 +36,7 @@ body {
   font-size: 1rem;
   font-weight: 200;
   line-height: 1.5;
-  color: #212529;
+  color: #3a3a3a;
   text-align: left;
   background-color: #f5f6f6;
 }
@@ -367,7 +367,7 @@ h6, .h6 {
 
 .lead {
   font-size: 1.25rem;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 .display-1 {
@@ -4647,7 +4647,7 @@ input[type=button].btn-block {
   display: inline-block;
   padding: 0.25em 0.4em;
   font-size: 75%;
-  font-weight: 700;
+  font-weight: 200;
   line-height: 1;
   text-align: center;
   white-space: nowrap;
@@ -4814,7 +4814,7 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .alert-link {
-  font-weight: 700;
+  font-weight: 200;
 }
 
 .alert-dismissible {
@@ -5295,7 +5295,7 @@ a.badge-dark:focus, a.badge-dark.focus {
 .close {
   float: right;
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 200;
   line-height: 1;
   color: #000;
   text-shadow: 0 1px 0 #fff;
@@ -9484,7 +9484,7 @@ button.bg-dark:focus {
 }
 
 .font-weight-light {
-  font-weight: 300 !important;
+  font-weight: 200 !important;
 }
 
 .font-weight-lighter {
@@ -9492,7 +9492,7 @@ button.bg-dark:focus {
 }
 
 .font-weight-normal {
-  font-weight: 300 !important;
+  font-weight: 200 !important;
 }
 
 .font-weight-bold {
