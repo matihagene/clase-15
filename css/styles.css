@@ -7303,7 +7303,8 @@ button.bg-dark:focus {
 
 .mb-4,
 .my-4 {
-  margin-bottom: 1.5rem !important;
+  margin-bottom: 1rem !important;
+  color: #bf0404;
 }
 
 .ml-4,
@@ -9726,6 +9727,12 @@ p.lead {
   font-family: 'Work Sans', sans-serif;
   font-weight: 200;
   font-size: 1.2rem;
+}
+
+.subheading-publications {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 200;
+  font-size: 0.9rem;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {

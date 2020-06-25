@@ -113,7 +113,7 @@
                     for (let i = 1; i < publications.length; i++) {
                         $("#publications").append(
 
-                                    '<div class="d-flex flex-column flex-md-row justify-content-between mb-5"><div class="flex-grow-1"><h3 class="mb-0">'+publications[i][0]+'</h3><div class="subheading mb-3">'+publications[i][1]+'</div><p><ul>'+publications[i][2]+'</ul></p></div><div class="flex-shrink-0"><span class="text-primary">'+ publications[i][3] + ' - ' + publications[i][4] +'</span><a class="bg-dark" target="_blank" href="https://www.linkedin.com/in/stefano-bruzzo-gallardo">View Article</a></div></div>' 
+                                    '<div class="d-flex flex-column flex-md-row justify-content-between mb-5"><div class="flex-grow-1"><h3 class="mb-0">'+publications[i][0]+'</h3><div class="subheading-publications mb-4">'+publications[i][1]+', '+publications[i][3]+'</div></div><div class="flex-shrink-0"><a class="bg-dark" target="_blank" href="'+publications[i][4]+'">View Article</a></div></div>' 
                         );
                     }
 
