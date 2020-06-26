@@ -101,7 +101,7 @@
 
         <!-- Publications -->
 
-        <section class="resume-section-v2" id="publications">
+        <!--<section class="resume-section-v2" id="publications">
         <h2 class="mb-5">Publications</h2>        
         <script>
             Papa.parse("https://raw.githubusercontent.com/matihagene/clase-15/gh-pages/publications.csv", {
@@ -122,14 +122,12 @@
             });
         </script>
         </section>
-        <hr class="m-0" />
+        <hr class="m-0" /> -->
 
-        <!-- Pagination -->
+        <!-- Publications -->
 
-        
-
-        <section class="resume-section-v2" id="list">
-        <h2 class="mb-5">Demo</h2>
+        <section class="resume-section-v2" id="publications">
+        <h2 class="mb-5">Publications</h2>
 		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 		<script src="js/pagination.min.js"></script>
 		<link rel="stylesheet" href="https://pagination.js.org/dist/2.1.4/pagination.css"/>
@@ -139,15 +137,15 @@
 
 		function doStuff (data) {
 
-		$('#list').pagination({ // you call the plugin
+		$('#publications').pagination({ // you call the plugin
   			dataSource: data, // pass all the data
-			pageSize: 3, // put how many items per page you want
+			pageSize: 2, // put how many items per page you want
 			callback: function(data, pagination) {
 			      // data will be chunk of your data (json.Product) per page
 			      // that you need to display
-			    var wrapper = $('#list .wrapper').empty();
+			    var wrapper = $('#publications .wrapper').empty();
 			    $.each(data, function (i, f) {
-			         $('#list .wrapper').append('<div class="d-flex flex-column flex-md-row justify-content-between mb-5"><div class="flex-grow-1"><h3 class="mb-0">'+data[i][0]+'</h3><div class="subheading-publications mb-4">'+data[i][1]+', '+data[i][3]+'</div></div><div class="flex-shrink-0"><a class="bg-dark" target="_blank" href="'+data[i][4]+'">View Article <i class="fas fa-chevron-right"></i></a></div></div>');
+			         $('#publications .wrapper').append('<div class="d-flex flex-column flex-md-row justify-content-between mb-5"><div class="flex-grow-1"><h3 class="mb-0">'+data[i][0]+'</h3><div class="subheading-publications mb-4">'+data[i][1]+', '+data[i][3]+'</div></div><div class="flex-shrink-0"><a class="bg-dark" target="_blank" href="'+data[i][4]+'">View Article <i class="fas fa-chevron-right"></i></a></div></div>');
 			      });
 			    }
 			   });
@@ -169,7 +167,7 @@
 
         </script>
         
-        <div id="list"><div class="wrapper"></div></div>
+        <div id="publications"><div class="wrapper"></div></div>
 
         </section>
         <hr class="m-0" />
