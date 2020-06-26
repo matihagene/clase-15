@@ -9894,9 +9894,6 @@ section.resume-section-v3 .resume-section-content-v3 {
   section.resume-section {
     min-height: 100vh;
   }
-    section.resume-section-v3 {
-    min-height: 100vh;
-  }
 }
 @media (min-width: 992px) {
   section.resume-section {
